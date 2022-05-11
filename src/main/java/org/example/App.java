@@ -15,11 +15,20 @@ public class App {
         System.out.println("Age: "+dog.getAge());
         System.out.println("Color: "+dog.getColor());
         System.out.println("Species: "+dog.getSpecies());
+        dog.animalPlus();
+        dog.animalMinus();
+        System.out.println();
+
+
         Person person=context.getBean("person", Person.class);
         System.out.println("Information about person: ");
         System.out.println("Name: "+person.getName());
         System.out.println("Age: "+person.getAge());
         System.out.println("Dog: "+person.getDog());
+
+
+
+
 
 
     }
